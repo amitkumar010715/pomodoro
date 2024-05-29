@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .pomodoro-container {
+            text-align: center;
+            background-color: #0ad8d8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .timer {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .controls button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #start {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        #pause {
+            background-color: #ffc107;
+            color: #fff;
+        }
+
+        #reset {
+            background-color: #dc3545;
+            color: #fff;
+        }
+
+        .time-inputs {
+            margin-bottom: 20px;
+        }
+
+        .time-inputs label,
+        .time-inputs input {
+            margin: 0 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pomodoro-container">
+        <h1>Pomodoro Timer</h1>
+        <div class="time-inputs">
+            <label for="workTime">Work Minutes: </label>
+            <input type="number" id="workTime" value="25" min="1">
+            <label for="breakTime">Break Minutes: </label>
+            <input type="number" id="breakTime" value="5" min="1">
+        </div>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
